@@ -9,8 +9,10 @@
             </div>
             <span class="text-danger pt-3 pb-3" v-if="form.errors.has('title')" v-text="form.errors.get('title')"></span>
         </form>
-        <div class="w-25">
-            <div v-for="todo in todos" :key="todo.id" class="v-100">{{todo.title}}</div>
+        <div class="w-100">
+            <ul class="list-group">
+                <ul v-for="todo in todos" :key="todo.id" class="list-group-item">{{todo.title}}</ul>
+            </ul>
         </div>
     </div>
 </template>

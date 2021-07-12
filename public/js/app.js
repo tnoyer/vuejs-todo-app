@@ -1925,6 +1925,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37683,16 +37685,18 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "w-25" },
-      _vm._l(_vm.todos, function(todo) {
-        return _c("div", { key: todo.id, staticClass: "v-100" }, [
-          _vm._v(_vm._s(todo.title))
-        ])
-      }),
-      0
-    )
+    _c("div", { staticClass: "w-100" }, [
+      _c(
+        "ul",
+        { staticClass: "list-group" },
+        _vm._l(_vm.todos, function(todo) {
+          return _c("ul", { key: todo.id, staticClass: "list-group-item" }, [
+            _vm._v(_vm._s(todo.title))
+          ])
+        }),
+        0
+      )
+    ])
   ])
 }
 var staticRenderFns = [
